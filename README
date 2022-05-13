@@ -1,7 +1,6 @@
-Demonstrates how structures can be more performant than classes.
 
-Tests are done for structs/classes with 1 and 10 fields.
+As of Swift 4.0, Xcode 9.2, running Release build on iPhone 6S, iOS 11.2.6, Swift Compiler setting is -O -whole-module-optimization:
 
-Compiler settings:
-LLVM -Ofast
-Swift Compiler -O -whole-module-optimization
+class version took 2.06 seconds
+struct version took 4.17e-08 seconds (50,000,000 times faster)
+(I no longer average multiple runs, as variances are very small, under 5%)
